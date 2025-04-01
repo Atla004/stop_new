@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../LoginRegister/style.css">
+    <script defer src="../LoginRegister/index.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet"  type='text/css'>
+
+    
+</head>
+
+<body>
+<div class="background">
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div  class="signup">
+				<form id="registerForm" >
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input id="usernameRegister" type="text" name="txt" placeholder="User name" required="">
+					<input id="emailRegister" type="email" name="email" placeholder="Email" required="">
+					<input id="passwordRegister" type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div  class="login">
+				<form id="loginForm">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input id="emailLogin" type="email" name="email" placeholder="Email" required="">
+					<input id="passwordLogin" type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</div>
+    
+<script src="../Slice/Slice.js" type="module"></script>
+
+</body>
+
+</html>
