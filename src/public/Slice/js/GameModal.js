@@ -273,7 +273,7 @@ export default class GameModal extends HTMLElement {
         let call = await mainFetch.request("POST", { room: this.room }, "/game/deleteRoomSession");
         if (call.status == 200) {
             setTimeout(() => {
-                window.location.href = "http://${ROUTE}:3003/home";
+                window.location.href = `http://${ROUTE}:3003/home`;
             }, 5000);
         }
     }
