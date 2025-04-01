@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: stopgame
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./src/components/Security/createPermissions.sql:/docker-entrypoint-initdb.d/createPermissions.sql

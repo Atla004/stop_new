@@ -13,7 +13,7 @@ sessionRouter.get("/login", (req, res) => {
     if (sess.isLogged(req, res) == true) {
         res.redirect(`http://${ROUTE}:3003/home`);
     } else {
-        res.sendFile(path.join(__dirname,"..", "public", "loginRegister", "index.html"));
+        res.sendFile(path.join(__dirname,"..", "public", "LoginRegister", "index.html"));
     }
 });
 
