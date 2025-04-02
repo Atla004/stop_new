@@ -60,6 +60,6 @@
         
 }
 
-let mainFetch = new Fetch("http://localhost:3000", 10000);
+let mainFetch = new Fetch("http://192.168.1.119:3003", 10000);
 
 export default mainFetch;
